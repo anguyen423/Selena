@@ -1,0 +1,86 @@
+/* General Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #3d003d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container for content */
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 182, 249, 0.2);
+}
+
+/* Profile Image Styling */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffb6f9;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px #ffb6f9;
+}
+
+/* Username Text */
+h1 {
+  font-size: 1.8rem;
+  color: #ffb6f9;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px #000;
+}
+
+/* Link Buttons */
+.links a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background-color: #2e003e;
+  color: #ffb6f9;
+  border: 2px solid #ffb6f9;
+  padding: 14px 0;
+  margin: 10px 0;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #80008066;
+}
+
+/* Hover Effect */
+.links a:hover {
+  background-color: #ffb6f9;
+  color: #2e003e;
+  box-shadow: 0 0 20px #ffb6f9;
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .links a {
+    padding: 12px 0;
+    font-size: 0.95rem;
+  }
+}
