@@ -1,4 +1,4 @@
-/* General Reset & Base */
+/* Reset and base styling */
 * {
   margin: 0;
   padding: 0;
@@ -6,102 +6,82 @@
 }
 
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(to bottom, #1a1a1a, #3d003d);
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #fffaf0, #fdf6f0);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  background-image: url('images/flowers-background.png'); /* optional floral background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-/* Container for content */
+/* Container styling */
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
   padding: 30px 20px;
   width: 100%;
   max-width: 400px;
   text-align: center;
-  box-shadow: 0 0 30px rgba(255, 182, 249, 0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(8px);
 }
 
-/* Profile Image Styling */
+/* Profile image */
 .profile-pic {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #ffb6f9;
+  border: 3px solid #d6bfa5;
   margin-bottom: 15px;
-  box-shadow: 0 0 15px #ffb6f9;
+  box-shadow: 0 0 10px #e4d2c0;
 }
 
-/* Username Text */
+/* Username */
 h1 {
-  font-size: 1.8rem;
-  color: #ffb6f9;
+  font-size: 1.6rem;
+  color: #a87c4f;
   margin-bottom: 25px;
-  text-shadow: 2px 2px #000;
 }
 
-/* Link Buttons */
+/* Links */
 .links a {
   display: block;
-  width: 100%;
   text-decoration: none;
-  background-color: #2e003e;
-  color: #ffb6f9;
-  border: 2px solid #ffb6f9;
+  background-color: #fff5ea;
+  color: #a87c4f;
+  border: 2px solid #e9d5bd;
   padding: 14px 0;
   margin: 10px 0;
   border-radius: 30px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px #80008066;
+  box-shadow: 0 0 10px #f5e6d6;
 }
 
-/* Hover Effect */
 .links a:hover {
-  background-color: #ffb6f9;
-  color: #2e003e;
-  box-shadow: 0 0 20px #ffb6f9;
-  transform: scale(1.05);
+  background-color: #e9d5bd;
+  color: #5f3d24;
+  transform: scale(1.04);
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 500px) {
   .container {
     padding: 25px 15px;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .links a {
-    padding: 12px 0;
     font-size: 0.95rem;
-  }
-}
-.kuromi-bg {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 120px;
-  height: auto;
-  z-index: 0;
-  opacity: 0.8;
-  pointer-events: none;
-  animation: floatDance 3s ease-in-out infinite;
-}
-
-/* Cute bounce animation */
-@keyframes floatDance {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
   }
 }
